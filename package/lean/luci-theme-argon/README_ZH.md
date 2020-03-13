@@ -1,5 +1,4 @@
-# luci-theme-argon ([中文](/README_ZH.md))
-
+# luci-theme-argon ([Eng](/README.md))
 [1]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 [2]: /LICENSE
 [3]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
@@ -18,23 +17,21 @@
 [![Release Count][9]][8]
 [![Contact Me][10]][11]
 
+
 ![](/Screenshots/pc1.jpg)
 ![](/Screenshots/phone.jpg)
+全新的 Openwrt 主题，基于luci-theme-material 和 开源免费的 Argon 模板进行移植。 
 
-A new Luci theme for LEDE/OpenWRT  
-Argon is a clean HTML5 theme for LuCI. It is based on luci-theme-material and Argon Template  
+## 注意
+当前master版本基于官方 OpenWrt 19.07.1 稳定版固件进行移植适配。  
+v2.1 适配主线快照版本。  
+v2.01 适配官方稳定版 [Luci版本 LuCI openwrt-19.07 branch (git-20.006.26738-35aa527)]  
+v1.3 适配18.06 和 Lean Openwrt [如果你是lean代码 请选择这个版本]
 
 
-The old version is still in another branch call old. If you need that you can checkout that branch.
+## 如何使用
+进入 openwrt/package/lean  或者其他目录
 
-## Notice
-v2.01 Adapt to official 19.07 stable version (not snapshot) LuCI openwrt-19.07 branch (git-20.006.26738-35aa527).  
-v2.1 Adapt to official mainline snapshot.  
-You can checkout branch 18.06 for  OpenWRT 18.06 or lean 19.07.
-
-## How to build
-
-Enter in your openwrt/package/lean  or  other
 ####Lean lede
 ```
 cd lede/package/lean  
@@ -51,8 +48,7 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git
 make menuconfig #choose LUCI->Theme->Luci-theme-argon  
 make -j1 V=s  
 ```
-
-## Install 
+## 安装
 ### For Lean openwrt
 ```
 wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releases/download/v1.3/luci-theme-argon_1.4-01-20200101_all.ipk
@@ -71,14 +67,13 @@ wget --no-check-certificate https://github.com/jerrykuku/luci-theme-argon/releas
 opkg install luci-theme-argon_2.1-20200206_all.ipk
 ```
 
-## Update log 2020.02.06
-1. v2.01  Fix display error, when not set password.
-2. v2.1 Adapt to official mainline snapshot.
+## 更新日志 2020.02.06
+1. v2.01 修复了当未设置密码时提示错位的问题，同时修正部分下拉框文字颜色问题。  
+2. v2.1 适配官方主线快照。
 
-## More Screenshots
-
+## 截图
 ![](/Screenshots/pc2.jpg)
 ![](/Screenshots/pc3.jpg)
 
-## Thanks to 
+## 感谢
 luci-theme-material: https://github.com/LuttyYang/luci-theme-material/
